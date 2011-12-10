@@ -35,7 +35,7 @@
       <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="46" selection-start="982" selection-end="982" vertical-scroll-proportion="-0.01369863">
+            <state line="13" column="3" selection-start="244" selection-end="244" vertical-scroll-proportion="0.3561644">
               <folding />
             </state>
           </provider>
@@ -60,8 +60,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/features/tasks/tasks_management.feature" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -564,7 +564,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="46" selection-start="982" selection-end="982" vertical-scroll-proportion="-0.01369863">
+        <state line="13" column="3" selection-start="244" selection-end="244" vertical-scroll-proportion="0.3561644">
           <folding />
         </state>
       </provider>
