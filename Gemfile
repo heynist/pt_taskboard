@@ -22,39 +22,38 @@ end
 
 gem 'jquery-rails'
 
-
-gem 'devise'
+#gem 'devise'
 gem "inherited_resources"
 gem "simple_form"
-gem "cancan"
+#gem "cancan"
 gem 'show_for'
 gem 'acts_as_blamable'
-gem 'breadcrumbs_on_rails'
+#gem 'breadcrumbs_on_rails'
 gem 'less-rails-bootstrap', '~> 1.3.0'
 
-group :development do
-  gem "guard", ">= 0.6.2"
-  case HOST_OS
-    when /darwin/i
-      gem 'rb-fsevent'
-      gem 'rb-inotify', :require => false
-      gem 'rb-fchange', :require => false
-      gem 'growl'
-    when /linux/i
-      gem 'libnotify'
-      gem 'rb-inotify'
-    when /mswin|windows/i
-      gem 'rb-fchange'
-      gem 'win32console'
-      gem 'rb-notifu'
-  end
-  gem "guard-bundler", ">= 0.1.3"
-  gem "guard-rails", ">= 0.0.3"
-  gem "guard-livereload", ">= 0.3.0"
-  gem "guard-rspec", ">= 0.4.3"
-  gem 'rails-footnotes', '>= 3.7.5.rc4'
-  gem "spreadsheet", "~> 0.6.5.9"
-end
+#group :development do
+#  gem "guard", ">= 0.6.2"
+#  case HOST_OS
+#    when /darwin/i
+#      gem 'rb-fsevent'
+#      gem 'rb-inotify', :require => false
+#      gem 'rb-fchange', :require => false
+#      gem 'growl'
+#    when /linux/i
+#      gem 'libnotify'
+#      gem 'rb-inotify'
+#    when /mswin|windows/i
+#      gem 'rb-fchange'
+#      gem 'win32console'
+#      gem 'rb-notifu'
+#  end
+#  gem "guard-bundler", ">= 0.1.3"
+#  gem "guard-rails", ">= 0.0.3"
+#  gem "guard-livereload", ">= 0.3.0"
+#  gem "guard-rspec", ">= 0.4.3"
+#  gem 'rails-footnotes', '>= 3.7.5.rc4'
+#  gem "spreadsheet", "~> 0.6.5.9"
+#end
 
 group :test, :development do
   # Pretty printed test output
