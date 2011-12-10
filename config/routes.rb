@@ -1,6 +1,6 @@
 PtTaskboard::Application.routes.draw do
+  root :to => "home#index"
   resources :stories
-
   resources :projects
 
   # The priority is based upon order of creation:

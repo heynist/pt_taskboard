@@ -1,4 +1,6 @@
-<h1>Editing project</h1>
+<% content_for :header do %>
+    <h1>Project: <%= @project.name %></h1>
+<% end %>
 
 <%= render 'form' %>
 

@@ -1,4 +1,10 @@
-<h1>Listing projects</h1>
+<% content_for :header do %>
+    <h1>Listing projects</h1>
+<% end %>
+
+<% content_for :header_right do %>
+    <%= link_to 'New Project', new_project_path %>
+<% end %>
 
 <table>
   <tr>
@@ -22,4 +28,4 @@
 
 <br />
 
-<%= link_to 'New Project', new_project_path %>
+

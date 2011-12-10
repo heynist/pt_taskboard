@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>PtTaskboard</title>
-  <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+  <head>
+    <title>PtTaskboard</title>
+    <%= stylesheet_link_tag :application %>
+    <%= javascript_include_tag :application %>
+    <%= csrf_meta_tags %>
+    <script type="text/javascript">
+    	$(document).ready(function(){
+    	    $('.topbar').dropdown();
+    	})
+    </script>
 </head>
 <body>
-
-<%= yield %>
-
-</body>
+    <div id="topbar" class="topbar">
+        <div class="fill">
+            <div class="container">
+                <%= render :partial => 'common/menu' %>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="page-header">
+              <div class="row">
+                <div class="span12">
+                  <%= yield :header if content_for?(:header) %>
+                </div>
+                <div class="span4 text_right">
+                  <%= yield :header_right if content_for?(:header_right) %>
+                </div>
+              </div>
+            </div>
+            <% flash.each do |key, message| %>
+              <%= content_tag :div, message, class: "alert-message #{key.to_s == "notice" ? "success" : key }" %>
+            <% end %>
+            <%= yield %>
+        </div>
+        <footer>
+            <p>© PTTaskboard 2011</p>
+        </footer>
+    </div>
+  </body>
 </html>

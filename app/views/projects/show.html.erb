@@ -1,9 +1,8 @@
-<p id="notice"><%= notice %></p>
+<% content_for :header do %>
+    <h1>Project: <%= @project.name %></h1>
+<% end %>
 
-<p>
-  <b>Id:</b>
-  <%= @project.id %>
-</p>
+<p id="notice"><%= notice %></p>
 
 <p>
   <b>Name:</b>

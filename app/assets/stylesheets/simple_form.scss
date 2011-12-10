@@ -1,0 +1,13 @@
+.simple_form {
+	label.string, label.integer {
+	}
+
+	input[type="text"], input[type="number"], select {
+		margin: 0;
+		display: block;
+	}
+}
+
+.input {
+	margin: 0 0 1em;
+}
