@@ -1,5 +1,4 @@
-require 'rbconfig'
-HOST_OS = RbConfig::CONFIG['host_os']
+#require 'rbconfig'
 
 source 'http://rubygems.org'
 
@@ -12,24 +11,16 @@ group :development do
   gem 'sqlite3'
 end
 
-# Gems used only for assets and not required
-# in production environments by default.
-group :assets do
-  gem 'sass-rails',   '~> 3.1.4'
-  gem 'coffee-rails', '~> 3.1.1'
-  gem 'uglifier', '>= 1.0.3'
-end
-
 gem 'jquery-rails'
 
 #gem 'devise'
-gem "inherited_resources"
-gem "simple_form"
+#gem "inherited_resources"
+#gem "simple_form"
 #gem "cancan"
-gem 'show_for'
-gem 'acts_as_blamable'
+#gem 'show_for'
+#gem 'acts_as_blamable'
 #gem 'breadcrumbs_on_rails'
-gem 'less-rails-bootstrap', '~> 1.3.0'
+#gem 'less-rails-bootstrap', '~> 1.3.0'
 
 #group :development do
 #  gem "guard", ">= 0.6.2"
@@ -55,24 +46,24 @@ gem 'less-rails-bootstrap', '~> 1.3.0'
 #  gem "spreadsheet", "~> 0.6.5.9"
 #end
 
-group :test, :development do
-  # Pretty printed test output
-  gem 'turn', :require => false
-  gem 'execjs'
-  gem 'therubyracer'
-  gem 'database_cleaner'
-  gem 'launchy'
-  gem 'factory_girl_rails'
-end
+#group :test, :development do
+#  # Pretty printed test output
+#  gem 'turn', :require => false
+#  gem 'execjs'
+#  gem 'therubyracer'
+#  gem 'database_cleaner'
+#  gem 'launchy'
+#  gem 'factory_girl_rails'
+#end
 
-group :test do
-  gem 'ZenTest'
-  gem 'rspec-rails'
-  gem 'cucumber-rails'
-  gem "guard-cucumber", ">= 0.6.1"
-  gem 'pickle'
-  gem 'minitest'
-  gem 'shoulda-matchers'
-  gem 'timecop'
-  gem 'jasmine'
-end
+#group :test do
+#  gem 'ZenTest'
+#  gem 'rspec-rails'
+#  gem 'cucumber-rails'
+#  gem "guard-cucumber", ">= 0.6.1"
+#  gem 'pickle'
+#  gem 'minitest'
+#  gem 'shoulda-matchers'
+#  gem 'timecop'
+#  gem 'jasmine'
+#end
