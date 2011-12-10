@@ -1,0 +1,3 @@
+curl -H "X-TrackerToken: a748e5d490c78c6ca25c5b960cb052c8" -X POST -H "Content-type: application/xml" \
+    -d "<task><description>clean shields</description></task>" \
+    http://www.pivotaltracker.com/services/v3/projects/431109/stories/22118801/tasks

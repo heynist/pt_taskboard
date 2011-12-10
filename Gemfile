@@ -18,7 +18,7 @@ end
 gem 'jquery-rails'
 
 #gem 'devise'
-#gem "inherited_resources"
+gem "inherited_resources"
 #gem "simple_form"
 #gem "cancan"
 #gem 'show_for'
