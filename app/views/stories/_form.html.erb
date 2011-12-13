@@ -1,9 +1,0 @@
-<%= simple_form_for [@project,@story] do |f| %>
-    <%= f.input :name %>
-    <%= f.button :submit, class: "btn primary" %>
-    <% if @story.id %>
-        <%= link_to 'cancel', story_path(@story), class: "btn" %>
-    <% else %>
-        <%= link_to 'cancel', stories_path, class: "btn" %>
-    <% end %>
-<% end %>

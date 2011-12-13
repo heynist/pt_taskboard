@@ -1,0 +1,30 @@
+<% if @project.iterations.empty? %>
+    No iterations yet
+<% else %>
+    <table id='iterations'>
+      <thead>
+      <tr>
+        <th>Nr</th>
+      </tr>
+      <tr>
+        <th>Start</th>
+      </tr>
+      <tr>
+        <th>Finish</th>
+      </tr>
+      </thead>
+      <tbody>
+      <% @project.iterations.each do |iteration| %>
+          <tr>
+            <td><%= iteration.nr %></td>
+          </tr>
+          <tr>
+            <td><%= iteration.start %></td>
+          </tr>
+          <tr>
+            <td><%= iteration.finish %></td>
+          </tr>
+      <% end %>
+      </tbody>
+    </table>
+<% end %>

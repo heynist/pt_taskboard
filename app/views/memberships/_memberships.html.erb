@@ -1,0 +1,30 @@
+<% if @project.memberships.empty? %>
+    No members yet
+<% else %>
+    <table id='memberships'>
+      <thead>
+      <tr>
+        <th>Name</th>
+      </tr>
+      <tr>
+        <th>Email</th>
+      </tr>
+      <tr>
+        <th>Initials</th>
+      </tr>
+      </thead>
+      <tbody>
+      <% @project.memberships.each do |membership| %>
+          <tr>
+            <td><%= membership.name %></td>
+          </tr>
+          <tr>
+            <td><%= membership.email %></td>
+          </tr>
+          <tr>
+            <td><%= membership.initials %></td>
+          </tr>
+      <% end %>
+      </tbody>
+    </table>
+<% end %>
