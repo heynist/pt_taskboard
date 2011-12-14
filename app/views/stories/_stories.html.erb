@@ -1,0 +1,21 @@
+<h2>Stories</h2>
+<% if @iteration.stories.empty? %>
+    No stories (yet)
+<% else %>
+    <table id='stories' class='zebra-striped'>
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+      </tr>
+      </thead>
+      <tbody>
+      <% @iteration.stories.each do |story| %>
+          <tr>
+            <td><%= story.name %></td>
+            <td><%= story.story_type %></td>
+          </tr>
+      <% end %>
+      </tbody>
+    </table>
+<% end %>
