@@ -3,15 +3,17 @@ module ProjectsHelper
   require 'rubygems'
   require 'active_resource'
 
-  project_id = '431109'
+  PROJECT_ID = '431109'
 
   class Story < ActiveResource::Base
     self.site = "http://www.pivotaltracker.com/services/v3/projects/431109"
-    headers['X-TrackerToken'] = 'a748e5d490c78c6ca25c5b960cb052c8'
+    headers['X-TrackerToken'] = 'd4c35ba00964a58fb1bdd746ea7b81eb'
   end
+
   def create_pt_story
     # Create a story
-    Story.create(:name => "Warp Speed ", :description => "do it now", :project_id => '431109')
+    #Story.create(:name => "story 1", :description => "do it now", :project_id => '431109')
+    Story.find(:all, :params => {:project_id => '431109'})
   end
 
   def find_pt_story
@@ -28,5 +30,8 @@ module ProjectsHelper
     #story.save
   end
 
-
+  def get_pt_members
+    #puts "in get_pt_members"
+    #Member.find(:all, :params => {:project_id => $PROJECT_ID})
+  end
 end

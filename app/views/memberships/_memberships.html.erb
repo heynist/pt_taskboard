@@ -1,15 +1,12 @@
+<h2>Memberships</h2>
 <% if @project.memberships.empty? %>
     No members yet
 <% else %>
-    <table id='memberships'>
+    <table id='memberships' class='zebra-striped'>
       <thead>
       <tr>
         <th>Name</th>
-      </tr>
-      <tr>
         <th>Email</th>
-      </tr>
-      <tr>
         <th>Initials</th>
       </tr>
       </thead>
@@ -17,11 +14,7 @@
       <% @project.memberships.each do |membership| %>
           <tr>
             <td><%= membership.name %></td>
-          </tr>
-          <tr>
             <td><%= membership.email %></td>
-          </tr>
-          <tr>
             <td><%= membership.initials %></td>
           </tr>
       <% end %>

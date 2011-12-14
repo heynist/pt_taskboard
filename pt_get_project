@@ -1,2 +1,2 @@
-curl -H "X-TrackerToken: a748e5d490c78c6ca25c5b960cb052c8" -X GET -H "Content-type: application/xml" \
+curl -H "X-TrackerToken: d4c35ba00964a58fb1bdd746ea7b81eb" -X GET -H "Content-type: application/xml" \
     http://www.pivotaltracker.com/services/v3/projects/431109

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111213073122) do
+ActiveRecord::Schema.define(:version => 20111214065240) do
 
   create_table "iterations", :force => true do |t|
     t.integer  "nr"
@@ -33,13 +33,15 @@ ActiveRecord::Schema.define(:version => 20111213073122) do
 
   create_table "projects", :force => true do |t|
     t.string   "name"
+    t.integer  "project_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "stories", :force => true do |t|
+    t.integer  "iteration_id"
+    t.string   "story_type"
     t.string   "name"
-    t.integer  "project_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

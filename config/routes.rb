@@ -1,7 +1,7 @@
 PtTaskboard::Application.routes.draw do
   root :to => "projects#index"
-  resources :projects do
-    resources :stories
+  resources :projects, only:[:index, :show] do
+    resources :iterations, only: [:show]
   end
 
   # The priority is based upon order of creation:

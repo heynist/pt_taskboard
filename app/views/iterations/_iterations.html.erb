@@ -1,28 +1,23 @@
+<h2>Iterations</h2>
 <% if @project.iterations.empty? %>
     No iterations yet
 <% else %>
-    <table id='iterations'>
+    <table id='iterations' class='zebra-striped'>
       <thead>
       <tr>
         <th>Nr</th>
-      </tr>
-      <tr>
         <th>Start</th>
-      </tr>
-      <tr>
         <th>Finish</th>
+        <th></th>
       </tr>
       </thead>
       <tbody>
       <% @project.iterations.each do |iteration| %>
           <tr>
             <td><%= iteration.nr %></td>
-          </tr>
-          <tr>
             <td><%= iteration.start %></td>
-          </tr>
-          <tr>
             <td><%= iteration.finish %></td>
+            <td><%= link_to 'Show', project_iteration_path(iteration, project_id: @project) %></td>
           </tr>
       <% end %>
       </tbody>
